@@ -13,7 +13,7 @@ export default function ScrollMenu() {
   };
 
   return (
-    <div className="menu">
+    <div className="scroll-menu">
       <button className="arrow-button" onClick={slideLeft}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

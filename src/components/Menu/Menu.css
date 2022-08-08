@@ -1,0 +1,12 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  /* position: fixed; */
+  height: 100vh;
+  top: 50px;
+  transform: translateX(100%);
+}
+
+.menu.active {
+  transform: translateX(0);
+}

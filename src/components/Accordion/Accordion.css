@@ -1,5 +1,17 @@
 .sub-menu {
   display: flex;
+  width: 100vh;
   width: 500px;
   justify-content: space-between;
+}
+
+.accordion-title {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+svg {
+  height: 30px;
 }
