@@ -14,10 +14,7 @@ export default function Menu({ active, setActive }) {
   };
 
   return (
-    <div
-      className={active ? "menu active" : "menu"}
-      //   onClick={() => setActive(false)}
-    >
+    <div className={active ? "menu active" : "menu"}>
       <ScrollMenu />
       <div>
         <ul className="accordion">

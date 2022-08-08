@@ -1,12 +1,60 @@
-import React from "react";
-import Hamburger from "../Hamburger/Hamburger";
+import React, { useState } from "react";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar(props) {
+  const [isOpen, setIsOpen] = useState(false);
+  const { onClick } = props;
+
   return (
     <div className="navigation">
       <div className="nav_left">
-        <Hamburger />
+        {isOpen ? (
+          <button
+            className="icon-button"
+            onClick={() => {
+              setIsOpen(false);
+              onClick();
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        ) : (
+          <button
+            className="icon-button"
+            onClick={() => {
+              setIsOpen(true);
+              onClick();
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        )}
         <div>
           <svg viewBox="0 0 739.1 97.6" className="logo">
             <path

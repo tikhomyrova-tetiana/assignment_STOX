@@ -26,3 +26,12 @@ svg {
   width: 200px;
   justify-content: space-between;
 }
+
+button {
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  top: 50%;
+  right: 25px;
+  padding-left: 20px;
+}
