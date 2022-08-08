@@ -1,20 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./ScrollMenu.css";
 import { data } from "./imgData";
 
 export default function ScrollMenu() {
-  const slideLeft = () => {
-    let slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 500;
-  };
-  const slideRight = () => {
-    let slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 500;
+  const sliderDiv = useRef();
+  const slide = (amount) => {
+    sliderDiv.current.scrollLeft = sliderDiv.current.scrollLeft + amount;
   };
 
   return (
     <div className="scroll-menu">
-      <button className="arrow-button" onClick={slideLeft}>
+      <button className="arrow-button" onClick={() => slide(-500)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -30,19 +26,22 @@ export default function ScrollMenu() {
           />
         </svg>
       </button>
-      <div id="slider" className="slider">
+      <div id="slider" className="slider" ref={sliderDiv}>
         {data.map((item) => (
-          <img className="menu-item" src={item.img} alt="/" />
+          <div className="container" key={item.id}>
+            <img className="menu-item" src={item.img} alt={item.name} />
+            <p>{item.name}</p>
+          </div>
         ))}
       </div>
-      <button className="arrow-button" onClick={slideRight}>
+      <button className="arrow-button" onClick={() => slide(500)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          stroke-width="2"
+          strokeWidth="2"
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
         </svg>

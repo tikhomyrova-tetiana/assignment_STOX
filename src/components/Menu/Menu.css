@@ -1,12 +1,11 @@
 .menu {
   display: flex;
   flex-direction: column;
-  /* position: fixed; */
   height: 100vh;
-  top: 50px;
-  transform: translateX(100%);
+  top: 100px;
+  display: none;
 }
 
 .menu.active {
-  transform: translateX(0);
+  display: block;
 }

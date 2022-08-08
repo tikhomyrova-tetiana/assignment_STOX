@@ -22,12 +22,3 @@ img {
   opacity: 1;
   transition: none 0s ease 0s;
 }
-
-.accordion {
-  list-style-type: none;
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: auto;
-}

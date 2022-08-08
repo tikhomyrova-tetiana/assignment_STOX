@@ -4,7 +4,7 @@ import ScrollMenu from "../ScrollMenu/ScrollMenu";
 import { categories } from "../Accordion/categories";
 import "./Menu.css";
 
-export default function Menu({ active, setActive }) {
+export default function Menu({ active }) {
   const [activeId, setActiveId] = useState(null);
 
   const onClickOpen = (id) => {
@@ -21,6 +21,7 @@ export default function Menu({ active, setActive }) {
           {categories
             ? categories.map((category) => (
                 <Accordion
+                  key={category.id}
                   id={category.id}
                   name={category.name}
                   subMenu={category.subCategories}
