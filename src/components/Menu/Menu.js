@@ -14,24 +14,22 @@ export default function Menu({ active }) {
   };
 
   return (
-    <div className={active ? "menu active" : "menu"}>
+    <section className={active ? "menu active" : "menu"}>
       <ScrollMenu />
-      <div>
-        <ul className="accordion">
-          {categories
-            ? categories.map((category) => (
-                <Accordion
-                  key={category.id}
-                  id={category.id}
-                  name={category.name}
-                  subMenu={category.subCategories}
-                  onClickOpen={onClickOpen}
-                  idToOpen={activeId}
-                />
-              ))
-            : null}
-        </ul>
-      </div>
-    </div>
+      <ul className="accordion">
+        {categories
+          ? categories.map((category) => (
+              <Accordion
+                key={category.id}
+                id={category.id}
+                name={category.name}
+                subMenu={category.subCategories}
+                onClickOpen={onClickOpen}
+                idToOpen={activeId}
+              />
+            ))
+          : null}
+      </ul>
+    </section>
   );
 }

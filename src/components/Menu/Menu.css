@@ -1,9 +1,13 @@
 .menu {
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden auto;
+  z-index: 99;
   height: 100vh;
-  top: 100px;
+  width: 100vw;
+  position: fixed;
+  top: 60px;
   display: none;
+  padding-bottom: 16vw;
 }
 
 .menu.active {
