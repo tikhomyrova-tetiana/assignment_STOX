@@ -42,8 +42,21 @@
   background-color: white;
   padding: 0 0 0 10px;
   opacity: 50%;
+  border: 0;
+  cursor: pointer;
+  top: 50%;
+  right: 25px;
 }
 
 svg {
   padding: 0;
+}
+
+button {
+  border: 0;
+  background-color:transparent;
+  cursor: pointer;
+  margin: 0;
+  outline: 0;
+  padding: 0
 }
