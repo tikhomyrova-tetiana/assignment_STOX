@@ -7,9 +7,20 @@
 
 .accordion-title {
   display: flex;
-  width: 70vw;
+  width: 80vw;
   justify-content: space-between;
   cursor: pointer;
+  margin: auto;
+}
+
+.accordion-title font {
+text-transform: uppercase;
+font-family: MaisonNeueBold, Arial, sans-serif;
+font-size: 4vw;
+padding: 6vw;
+position:relative;
+text-align: left;
+letter-spacing: 0.15em;
 }
 
 svg {
@@ -22,7 +33,7 @@ ul {
 }
 
 .accordion-item:first-of-type {
-  border-top: 1px solid rgb(224, 222, 223);
+  border-top: 2px solid rgb(224, 222, 223);
 }
 
 .accordion-item {

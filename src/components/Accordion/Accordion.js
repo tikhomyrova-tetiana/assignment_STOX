@@ -6,7 +6,7 @@ export default function Accordion(props) {
   return (
     <li className="accordion-item">
       <div className="accordion-title">
-        <h3>{name}</h3>
+        <font>{name}</font>
         {subMenu ? (
           <button onClick={() => onClickOpen(id)}>
             {idToOpen !== id ? (
