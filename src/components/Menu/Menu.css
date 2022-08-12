@@ -1,15 +1,13 @@
 .menu {
-  box-sizing: border-box;
-  overflow: hidden auto;
-  z-index: 99;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 60px;
-  display: none;
-  padding-bottom: 16vw;
+    box-sizing: border-box;
+    overflow: hidden auto;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    padding-bottom: 16vw;
 }
 
 .menu.active {
-  display: block;
+    display: block;
 }

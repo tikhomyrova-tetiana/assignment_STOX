@@ -40,7 +40,7 @@ export default function Navbar(props) {
           ></path>
         </svg>
       </a>
-      <div>
+      <div className="navigation-buttons">
         <button className="search-button">
           <svg
             xmlns="http://www.w3.org/2000/svg"

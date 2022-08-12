@@ -1,95 +1,99 @@
 .navigation {
-  height: 13.0667vw;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  padding: 0;
-  background-color: #fff;
-  color: black;
-  z-index: 9999;
-  border-bottom: 1px solid rgb(229, 229, 229);
-  vertical-align: baseline;
+    height: 13.0667vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #fff;
+    color: black;
+    z-index: 9999;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    vertical-align: baseline;
 }
 
 .logo {
- display: flex;
- text-decoration: none;
- align-items: center;
- z-index: 3;
- margin-right: 28.5vw
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    z-index: 3;
+    margin-right: 28.5vw
 }
 
 .logo svg {
-  height: 4.8vw;
-  padding-left: 0.8vw
+    height: 4.8vw;
+    padding-left: 0.8vw
 }
 
 .icon-button {
-  height: 4.8vw;
-  display:flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin: 4vw
+    height: 4.8vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 4vw
 }
 
 .icon-button div:first-child {
-  transform:translate3d(0px, 2vw, 0px) rotate(45deg)
+    transform: translate3d(0px, 2vw, 0px) rotate(45deg)
 }
 
 .icon-button div:nth-child(2) {
-  display:none
+    display: none
 }
 
 .icon-button div:nth-child(3) {
-  transform:translate3d(0px, -2.3vw, 0px) rotate(-45deg)
+    transform: translate3d(0px, -2.3vw, 0px) rotate(-45deg)
 }
 
 .icon-button div {
-  height: 0.5vw;
-  width: 6vw;
+    height: 0.5vw;
+    width: 6vw;
 }
 
 .navigation .color-bg {
-  background: black;
+    background: black;
 }
 
 .search-button {
-  margin-right: 3.6vw;
+    margin-right: 3.6vw;
 }
 
 .search-button svg {
-  height: 6.4vw;
-  width: 6.4vw
+    height: 6.4vw;
+    width: 6.4vw
 }
 
 .cart {
-  position:relative;
-  margin-right: 4vw;
+    position: relative;
+    margin-right: 4vw;
 }
 
 .cart svg {
-  height: 6vw;
-  width: 6vw
+    height: 6vw;
+    width: 6vw
 }
 
 .cart-number {
-  font-size: 2.66667vw;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate3d(-50%, -60%, 0px);
+    font-size: 2.66667vw;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate3d(-50%, -60%, 0px);
 }
 
 .icon-button-close {
-  height: 4.8vw;
-  display:flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin: 4vw
+    height: 4.8vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 4vw
 }
+
 .icon-button-close div {
-  height: 0.5vw;
-  width: 6vw
+    height: 0.5vw;
+    width: 6vw
+}
+
+.navigation-buttons {
+    display: flex;
 }
