@@ -30,7 +30,8 @@ svg {
 
 ul {
     list-style-type: none;
-    padding-inline-start: 0px
+    padding-inline-start: 0px;
+    margin-top: 0
 }
 
 .accordion-item:first-of-type {
